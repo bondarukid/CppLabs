@@ -1,10 +1,10 @@
-#include <iostream>
-#include <string>
+#include<iostream>
+#include<Windows.h>
 
 using namespace std;
 
-int main()
-{
+int main() {
+
 	system("pause");
 	return 0;
 }

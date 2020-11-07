@@ -13,27 +13,32 @@ int main()
 	cin >> x;
 	cout << "Enter Y: ";
 	cin >> y;
+	bool result;
 
 	if (x < 0)
 	{
 		if (y < 0)
 		{
-			cout << "Result: TRUE" << endl;
+			result = true;
+			cout << "Result: " << boolalpha << result << endl;
 		}
 		else if (y > 0)
 		{
-			cout << "Result: FALSE" << endl;
+			result = false;
+			cout << "Result: " << boolalpha << result << endl;
 		}
 	}
 	else if (x > 0)
 	{
 		if (y < 0)
 		{
-			cout << "Result: False" << endl;
+			result = false;
+			cout << "Result: " << boolalpha << result << endl;
 		}
 		else if (y > 0)
 		{
-			cout << "Result: TRUE" << endl;
+			result = true;
+			cout << "Result: " << boolalpha << result << endl;
 		}
 	}
 
