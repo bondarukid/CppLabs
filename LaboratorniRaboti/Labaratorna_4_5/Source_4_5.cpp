@@ -17,7 +17,7 @@ int Combin1(int N, int K)
 {
     if ((N == K) || (K == 0)) { counter++; return 1; }
     counter += 2;
-    return Combin1(N - 1, K) + Combin1(N - 1, K - 1);
+	return Combin1(N - 1, K)+ Combin1(N - 1, K - 1);
 }
 
 int main() {
@@ -33,7 +33,7 @@ int main() {
 		cout << "Enter K: ";
 		cin >> K;
 		C = Combin1(N, K);
-		cout << "Result: " << C << counter << endl;
+		cout << "Result: " << C << " Count: " << counter << endl;
 	}
 
 	system("pause");

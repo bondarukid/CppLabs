@@ -28,6 +28,6 @@ int main()
         cout << "Fact(N): " << Fact2(N) << endl;
     }
 
-    system("pause"):
+    system("pause");
 	return 0;
 }

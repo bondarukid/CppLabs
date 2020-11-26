@@ -8,7 +8,6 @@ X N = 1 / X -N при N <0
 За допомогою цієї функції знайти значення X N для даного X при п'яти даних значеннях N.
 */
 
-
 #include<iostream>
 #include<Windows.h>
 
@@ -20,9 +19,17 @@ double PowerN(double X, int N)
 
 	if (N > 0)
 	{
-		return X * PowerN(X, N-1);
+		/*if (N%2 != 0)
+		{
+			return X * PowerN(X, N - 1);
+		}
+		else if (N % 2 == 0)
+		{
+			return X * PowerN(X, N - 1);
+		}*/
+		return X * PowerN(X, N - 1);
 	}
-	if (N < 0)
+	else if (N < 0)
 	{
 		return 1 / X * PowerN(X, N + 1);
 	}
